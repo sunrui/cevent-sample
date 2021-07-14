@@ -1,0 +1,5 @@
+*.o
+*.a
+*.so
+config_test_simple
+config_test_subject

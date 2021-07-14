@@ -1,0 +1,9 @@
+# cevent 如何编译 (osx)
+
+1. 进入 3rdparty/jemalloc 目录 ./autogen.sh make
+2. 进入 3rdparty/openssl 目录 ./Configure darwin64-x86_64-cc make
+3. 运行 build/osx/cevent.xcodeproj
+
+# android 编译 openssl 裁减
+
+./Configure android shared no-des no-rc2 no-rc4 no-rc5 no-md2 no-md4 no-ripemd no-mdc2 no-dsa no-dh no-ec no-ecdsa no-ecdh no-ssl2 no-ssl3 no-idea no-err no-krb5 no-engine no-hw no-camellia no-seed no-bf no-cast no-sock no-ssl no-srtp no-tlsext no-cms no-jpake no-capieng --prefix=`pwd`/android/libs/armeabi --openssldir=openssl
